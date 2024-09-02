@@ -1,0 +1,15 @@
+{
+  "users": [],
+  "tasks": [
+    {
+      "id": "ad46",
+      "tarea": "Lavar",
+      "prioridad": "media"
+    },
+    {
+      "id": "053a",
+      "tarea": "Cocina",
+      "prioridad": "alta"
+    }
+  ]
+}
