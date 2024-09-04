@@ -14,7 +14,7 @@ export const TasksForm = () => {
   return (    
     <>
         <form>
-            <input type='text' placeholder='Tarea' onChange={(e) => setTarea(e.target.value)}/>
+            <input type='text' placeholder='Tarea' value={tarea} onChange={(e) => setTarea(e.target.value)}/>
             <select value={prioridad} onChange={(e) => setPrioridad(e.target.value)}>
                 <option value="">Seleccione</option>
                 <option value="baja">Baja</option>
