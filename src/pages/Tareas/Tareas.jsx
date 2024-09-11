@@ -17,7 +17,6 @@ export const Tareas = () => {
         console.log('Error: ', error);
       }
     }
-
     obtenerTareas()
   }, []);
 
