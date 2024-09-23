@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import { TasksForm } from '../../components/Form/TasksForm'
 import { getTasks } from '../../services/get'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-export const Tareas = () => {
+import React from 'react'
+
+export default function Tareas() {
   const [obtenerTareas, setObtenerTareas] = useState([])
   
   useEffect(() =>{
@@ -20,6 +21,13 @@ export const Tareas = () => {
     obtenerTareas()
   }, []);
 
+  const navigate = useNavigate();
+
+  function cerrarSesion() {
+    localStorage.removeItem('Autenticado');
+    navigate('/');
+  };
+
   return (
     <> 
         <div><TasksForm/></div>
@@ -32,6 +40,10 @@ export const Tareas = () => {
             <p>No hay tareas para mostrar</p>
           )} 
         </div>
+        
+        <button onClick={cerrarSesion}>Cerrar Sesión</button> 
+
     </>
   )
 }
+

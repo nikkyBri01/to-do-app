@@ -1,20 +1,11 @@
 import React from 'react'
-import { postUsers } from '../../services/post'
-import { UserForm } from '../../components/Form/UserForm'
+import FormRegister from '../../components/Register/FormRegister'
 
-export const Register = () => {
-    const [usuario, setUsuario] = useState('')
-    const [contra, setContra] = useState('')
-
-    const registrarUsuario = () => {
-        postUsers(usuario, contra)
-    }
-    
+export default function Register() {
   return (
-    <>
-        <UserForm setUsuario={setUsuario} setContra={setContra}/>
-
-        <button onClick={registrarUsuario}>Registrar</button>
-    </>
+    <div>
+      <FormRegister />
+    </div>
   )
 }
+

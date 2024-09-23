@@ -1,5 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "65fb",
+      "usuario": "nikky",
+      "email": "nikky01@gmail.com",
+      "contra": "12345"
+    }
+  ],
   "tasks": [
     {
       "id": "ad46",
@@ -35,6 +42,16 @@
       "id": "5931",
       "tarea": "Hola",
       "prioridad": "media"
+    },
+    {
+      "id": "2b8b",
+      "tarea": "Estoy corriendo desde Netlify",
+      "prioridad": "alta"
+    },
+    {
+      "id": "18c2",
+      "tarea": "tarea2",
+      "prioridad": "baja"
     }
   ]
 }

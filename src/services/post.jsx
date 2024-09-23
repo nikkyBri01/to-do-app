@@ -1,9 +1,10 @@
 //////////////LLAMADO POST/////////////
-async function postUsers(usuario, contra) {
+async function PostUsers(usuario, email, contra) {
     try {
      
         const userData = { 
             usuario,
+            email,
             contra 
         
         };
@@ -52,7 +53,7 @@ async function postTasks(tarea, prioridad) {
         throw error;
     }
 }
-export{ postUsers, postTasks}
+export{ PostUsers, postTasks}
 
 
 

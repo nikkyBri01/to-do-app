@@ -1,4 +1,4 @@
-async function getUsers() {
+async function GetUsers() {
     try {
         const response = await fetch('http://localhost:3000/users', {
             method: 'GET',
@@ -18,6 +18,8 @@ async function getUsers() {
         throw error;
     }
 }
+
+export { GetUsers };
 
 async function getTasks() {
     try {
@@ -39,4 +41,4 @@ async function getTasks() {
         throw error;
     }
 }
-export { getUsers, getTasks };
+export { getTasks };

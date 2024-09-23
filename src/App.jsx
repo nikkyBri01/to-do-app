@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import { Tareas } from './pages/Tareas/Tareas'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Routing from './routes/Routing';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Tareas/>
+      <Routing />
     </>
   )
 }
