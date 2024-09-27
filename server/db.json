@@ -52,6 +52,12 @@
       "id": "18c2",
       "tarea": "tarea2",
       "prioridad": "baja"
+    },
+    {
+      "id": "6bfe",
+      "tarea": "Estoy en clases",
+      "prioridad": "alta"
     }
-  ]
+  ],
+  "products": []
 }
